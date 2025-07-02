@@ -2,7 +2,7 @@
   --primary-color: #3498db;
   --primary-dark: #304bab;
   --text-color: #2c3e50;
-  --bg-color: #a2c3e45a;
+  --bg-color: #a2c3e4;
   --card-bg: #a2c3e45a;
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -92,7 +92,7 @@ button[name="more"] img.more-png {
     align-items: center;    
     justify-content: space-between;  
     padding: 10px 20px;     
-    background-color: #a2c3e45a;
+    background-color: #a2c3e4;
 }
 
 button:active {
@@ -142,7 +142,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #a2c3e45a;
+    background-color: #a2c3e4;
 }
 
 .logo-png {
