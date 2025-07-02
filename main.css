@@ -1,6 +1,3 @@
-/* style.css - Mobile-first стили для Angler PRO */
-
-/* Базовые сбросы и настройки */
 :root {
   --primary-color: #3498db;
   --primary-dark: #304bab;
@@ -28,10 +25,6 @@ body {
 }
 
 
-
-
-
-/* Секция карты */
 .map {
   background: var(--card-bg);
   padding: 16px;
@@ -48,13 +41,12 @@ body {
 
 .map iframe {
   width: 100%;
-  height: 60vh; /* Динамическая высота */
+  height: 60vh; 
   min-height: 300px;
   border: none;
-  background: #e0e0e0; /* Заполнитель пока грузится карта */
+  background: #e0e0e0; 
 }
 
-/* Кнопки */
 .guides {
   display: flex;
   flex-direction: column;
@@ -96,10 +88,10 @@ button[name="more"] img.more-png {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 .header {
-    display: flex;          /* Включаем flex-распределение */
-    align-items: center;    /* Выравниваем по вертикали (центр) */
-    justify-content: space-between;  /* Лого слева, кнопка справа */
-    padding: 10px 20px;     /* Отступы внутри header */
+    display: flex;          
+    align-items: center;    
+    justify-content: space-between;  
+    padding: 10px 20px;     
     background-color: #a2c3e45a;
 }
 
@@ -111,7 +103,6 @@ button:hover {
   background-color: var(--primary-dark);
 }
 
-/* Адаптация для планшетов */
 @media (min-width: 600px) {
   .container {
     padding: 20px;
@@ -134,14 +125,12 @@ button:hover {
 }
 
 
-/* Особые стили для iOS */
 @supports (-webkit-touch-callout: none) {
   button {
     padding: 16px;
   }
 }
 
-/* Основные стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -158,8 +147,8 @@ body {
 
 .logo-png {
     width: 200px;
-    height: 100px; /* Фиксированная высота */
-    object-fit: contain; /* Сохраняет пропорции */
+    height: 100px; 
+    object-fit: contain; 
     display: block;
     margin-left: -40px;
     margin-top: -10px;
@@ -198,9 +187,6 @@ button[name="more"] {
     cursor: pointer;
 }
 
-/* Стили модальных окон */
-/* Модальные окна - обновленные стили */
-
 .modal {
     display: none;
     position: fixed;
@@ -226,7 +212,7 @@ button[name="more"] {
     z-index: 2;
     max-height: 70vh;
     overflow-y: auto;
-    overscroll-behavior: contain; /* Предотвращает "проскакивание" скролла */
+    overscroll-behavior: contain; 
 }
 
 .modal-close-area {
@@ -235,8 +221,6 @@ button[name="more"] {
     height: 100%;
     z-index: 1;
 }
-
-/* Остальные стили остаются без изменений */
 
 .menu-btn, .guide-btn, .back-btn {
     display: block;
