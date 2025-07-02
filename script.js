@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Данные гайдов
     const guides = {
         1: {
             title: "Какую рыбу на что ловить?",
@@ -28,17 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     const tg = window.Telegram.WebApp;
 
-// Развернуть приложение на весь экран
     tg.expand();
 
-    // Элементы DOM
     const moreBtn = document.querySelector('button[name="more"]');
     const menuModal = document.getElementById('menuModal');
     const guidesModal = document.getElementById('guidesModal');
     const guideContentModal = document.getElementById('guideContentModal');
     const guideText = document.getElementById('guideText');
 
-    // Обработчики событий
     moreBtn.addEventListener('click', function() {
         menuModal.style.display = 'block';
     });
@@ -72,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
         guidesModal.style.display = 'block';
     });
 
-    // Закрытие модальных окон при клике на затемненную область
 document.querySelectorAll('.modal').forEach(modal => {
     modal.addEventListener('click', function(e) {
         if (e.target.classList.contains('modal') || e.target.classList.contains('modal-close-area')) {
